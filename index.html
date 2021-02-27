@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Cheese!</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script defer src="js/face-api.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div>
+        <div id="detector-information">
+            <p id="detector-text"></p>
+        </div>
+        <div id="record-control-area">
+            <canvas id="canvas" hidden></canvas>
+            <button id="record-start-btn"></button>
+            <button id="record-stop-btn" style="display: none"></button>
+        </div>
+    </div>
+
+    <div id="result-area" style="display: none">
+        <h1 style="color: white; text-align: center">Ein Meisterwerk!</h1>
+        <div id="photo-area">
+            <img id="photo" src="https://as2.ftcdn.net/jpg/03/05/47/03/500_F_305470391_jAU0MfkCqK2B5EZU2urnvaY9pIWuA8vk.jpg"/>
+        </div>
+        <div id="result-controls">
+            <button id="result-close-btn">Verwerfen</button>
+
+            <a id="result-save-btn">Speichern</a>
+        </div>
+    </div>
+
+    <video id="video" width="100%" height="100%" autoplay></video>
+
+</body>
+</html>
