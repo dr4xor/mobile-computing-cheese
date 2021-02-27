@@ -16,7 +16,9 @@ var isRecording = false;
 var resultPNG = null;
 
 function initVideo() {
-    navigator.mediaDevices.getUserMedia({video: true})
+    navigator.mediaDevices.getUserMedia({
+        video: true,
+        facingMode: 'user'})
         .then(function (stream) {
             video.srcObject = stream;
         })
